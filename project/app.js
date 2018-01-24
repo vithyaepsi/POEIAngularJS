@@ -20,6 +20,11 @@
         controller: 'HomeCtrl',
         controllerAs: 'home',
       })
+      .when('/exo03', {
+        templateUrl: 'src/app/exo3/exo3.html',
+        controller: 'Exo3Ctrl',
+        controllerAs: 'exo3',
+      })
       .otherwise({redirectTo:'/'});
   }
 

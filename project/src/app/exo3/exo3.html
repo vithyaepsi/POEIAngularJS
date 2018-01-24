@@ -1,0 +1,14 @@
+<div id="exo3-page">
+  	<div class="flex-container">
+	  	<div id="listeFilms" class="flex-item">
+	  		<ul>
+	  			<li ng-repeat="film in exo3.films">
+	  				<img ng-class="{'border_pink': film.selected === true}" class="pouet{{$index+1}}" ng-click="exo3.mdr($event)" src="{{film.img}}"></img>
+  				</li>
+	  		</ul>
+	  	</div>
+	  	<div id="detailFilm" class="flex-item">
+	  		<ng-include src="'src/app/exo3/detail-partial/detail.html'"></ng-include>
+  		</div>
+	</div>
+</div>
