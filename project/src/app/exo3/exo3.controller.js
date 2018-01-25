@@ -17,7 +17,7 @@
 
 		vm.mdr = mdr;
 		function mdr($event){
-			var pouet = _.findIndex(vm.films, function(o) { return o.img == $event.target.src; });
+			var pouet = _.findIndex(vm.films, function(o) { return o.img === $event.target.src; });
 			if( vm.films[pouet].selected === true ) {
 				vm.films[pouet].selected = false;
 				vm.idSelected = -1;
@@ -29,7 +29,6 @@
 				vm.films[pouet].selected = true;
 				vm.idSelected = pouet;
 			}
-	  		
 		}
 	}
 

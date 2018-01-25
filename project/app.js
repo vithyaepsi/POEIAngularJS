@@ -25,6 +25,16 @@
         controller: 'Exo3Ctrl',
         controllerAs: 'exo3',
       })
+      .when('/exo04', {
+        templateUrl: 'src/app/exo4/exo4.html',
+        controller: 'Exo4Ctrl',
+        controllerAs: 'exo4',
+      })
+      .when('/more', {
+        templateUrl: 'src/app/more/more.html',
+        controller: 'MoreCtrl',
+        controllerAs: 'more',
+      })
       .otherwise({redirectTo:'/'});
   }
 

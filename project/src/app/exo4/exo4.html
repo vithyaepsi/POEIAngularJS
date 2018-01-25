@@ -1,0 +1,23 @@
+<div class="container">
+	<div class="centerflex prout">
+		<input class="item" type="text" ng-model="exo4.inpute" />
+		<button ng-click="exo4.clicker()" class="item">Search</button>
+		<span class="toggle_container">
+			<input type="checkbox" class="my-checkbox" name="my-checkbox" checked>
+		</span>
+	</div>
+	<div class="highlight centerflex">
+		<h2>{{exo4.meteoService.settingService.city}}</h2>
+	</div>
+	<div class="centerflex" ng-show="exo4.meteoService.meteoListe !== []">
+		<img src="http://openweathermap.org/img/w/{{exo4.meteoService.meteoListe[0].weather[0].icon}}.png" alt="pisse" />
+		<h2>
+			{{exo4.meteoService.temp}}
+		</h2>
+	</div>
+	<div>
+		<a ng-click="exo4.redirect()">More</a>
+
+	</div>
+
+</div>
