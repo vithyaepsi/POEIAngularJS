@@ -35,6 +35,16 @@
         controller: 'MoreCtrl',
         controllerAs: 'more',
       })
+      .when('/final', {
+        templateUrl: 'src/app/final/final.html',
+        controller: 'FinalCtrl',
+        controllerAs: 'final',
+      })
+      .when('/cocktailDetail', {
+        templateUrl: 'src/app/final/cocktailDetail/cocktailDetail.html',
+        controller: 'CocktailDetailCtrl',
+        controllerAs: 'cocktailDetail',
+      })
       .otherwise({redirectTo:'/'});
   }
 

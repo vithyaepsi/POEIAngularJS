@@ -1,0 +1,15 @@
+<div class="container final_head">
+	<div class="centerflex ">
+		<input ng-model="final.textbox" class="item textbox" type="text"/>
+		<button ng-click="final.clicker()" class="item">Buvons !</button>
+	</div>
+	<div class="leftflex redtext">
+		<input disabled="disabled" ng-model="final.searchConfig.ingredient" />
+	</div>
+	<div class="centerflex">
+		<cocktail-directive ng-repeat="singleCocktail in final.cocktailSearch.cocktailList" 
+			cocktail-element="singleCocktail" ng-click="final.clickSingleCocktail(singleCocktail)" >
+
+		</cocktail-directive>
+	</div>
+</div>

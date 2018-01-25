@@ -1,14 +1,14 @@
 (function() {
   'use strict';
 
-  function WeatherCtrl() {
+  function CocktailCtrl() {
     var vm = this;
     vm.pute = 'PUTEBELGE';
   }
 
-  WeatherCtrl.$inject = [];
+  CocktailCtrl.$inject = [];
 
   angular.module('daproject')
-    .controller('WeatherCtrl', WeatherCtrl);
+    .controller('CocktailCtrl', CocktailCtrl);
 
 })();
